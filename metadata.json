@@ -1,0 +1,6 @@
+{
+  "name": "Moonlight & Magic",
+  "description": "Sebuah website web novel modern bergenre Romance Fantasy karya Muhamad Kholil Luthfi menceritakan kisah petualangan cinta dan sihir Arka dan Elara.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Moonlight & Magic — A Fantasy Romance Web Novel</title>
+  <meta name="description" content="Sebuah website web novel modern bergenre Romance Fantasy karya Muhamad Kholil Luthfi menceritakan kisah petualangan cinta dan sihir Arka dan Elara." />
+  <meta property="og:title" content="Moonlight & Magic — A Fantasy Romance Web Novel" />
+  <meta property="og:description" content="Sebuah website web novel modern bergenre Romance Fantasy karya Muhamad Kholil Luthfi menceritakan kisah petualangan cinta dan sihir Arka dan Elara." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Google Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Background Canvas & Ambient Light -->
+  <canvas id="starlight-canvas"></canvas>
+  <div class="ambient-glow ambient-glow-1"></div>
+  <div class="ambient-glow ambient-glow-2"></div>
+
+  <!-- Header & Top Navigation Bar -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <!-- Zone 1: Wordmark / Brand -->
+      <a href="index.html" class="brand-logo" aria-label="Moonlight & Magic Homepage">
+        <span class="brand-icon">✧</span>
+        <span>Moonlight &amp; Magic</span>
+      </a>
+
+      <!-- Zone 2: Navigation Links -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About The Story</a></li>
+          <li><a href="#chapters" class="nav-link">Chapters</a></li>
+          <li><a href="chapter1.html" class="nav-link">Chapter 1</a></li>
+          <li><a href="chapter2.html" class="nav-link">Chapter 2</a></li>
+        </ul>
+      </nav>
+
+      <!-- Zone 3: Primary Action & Mobile Toggle -->
+      <div class="nav-actions">
+        <a href="chapter1.html" class="btn-nav-primary">
+          <span>Start Reading</span>
+          <span>→</span>
+        </a>
+      </div>
+
+      <button class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-grid">
+          <!-- Text Content -->
+          <div class="hero-content">
+            <div class="hero-meta-strip">
+              <span>Web Novel</span>
+              <span class="hero-meta-separator">·</span>
+              <span><b>Romance Fantasy</b></span>
+              <span class="hero-meta-separator">·</span>
+              <span>2 Completed Chapters</span>
+            </div>
+
+            <h1>Moonlight &amp; Magic</h1>
+            <p class="hero-subtitle">A Fantasy Romance Story</p>
+
+            <blockquote class="hero-tagline">
+              "Some destinies are written by magic, others by the heart."
+            </blockquote>
+
+            <p class="hero-description">
+              Kisah takdir antara <b>Arka</b>, seorang pemuda pengembara dari dunia fana, dan <b>Elara</b>, 
+              penyihir muda penjaga kerajaan rahasia. Ketika <u>Moon Crystal</u> yang suci lenyap ditelan kegelapan, 
+              perjalanan menelusuri hutan terlarang mengubah keraguan menjadi ikatan kasih yang abadi di bawah cahaya rembulan.
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="chapter1.html" class="btn-primary">
+                <span>Start Reading Chapter 1</span>
+                <span>→</span>
+              </a>
+              <a href="#about" class="btn-secondary">
+                <span>Explore Story &amp; Lore</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Hero Visual Frame -->
+          <div class="hero-visual-frame">
+            <img 
+              src="images/hero.jpg" 
+              alt="Ilustrasi Arka dan Elara berdiri di bawah sinar rembulan purnama di tepian hutan ajaib" 
+              class="hero-visual-img"
+              loading="eager"
+            />
+            <div class="hero-visual-overlay">
+              <div class="hero-visual-caption">
+                <span>Arka &amp; Elara</span>
+                <span>Destiny Beneath the Full Moon</span>
+              </div>
+              <a href="chapter1.html" class="chapter-card-action" aria-label="Baca kisah mereka">
+                <span>Read Story</span> →
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LORE & ATMOSPHERE HIGHLIGHTS -->
+    <section class="lore-section">
+      <div class="container">
+        <div class="lore-grid">
+          <div class="lore-card">
+            <div class="lore-icon">☾</div>
+            <h3 class="lore-title">The Sacred Moon Crystal</h3>
+            <p class="lore-desc">
+              Pusaka suci <u>Moon Crystal</u> adalah jantung pelindung kerajaan dari bayangan kegelapan kuno. Mantra pelindung <code>Luna Aeterna</code> hanya dapat dibangkitkan oleh dua hati yang seirama.
+            </p>
+          </div>
+
+          <div class="lore-card">
+            <div class="lore-icon">✦</div>
+            <h3 class="lore-title">Hidden Realm of Celesta</h3>
+            <p class="lore-desc">
+              Kerajaan magis yang tersembunyi berabad-abad di balik kabut tebal hutan purba, tempat di mana cahaya bintang menyentuh bumi dan sihir mengalir dalam tiap hembusan angin.
+            </p>
+          </div>
+
+          <div class="lore-card">
+            <div class="lore-icon">❦</div>
+            <h3 class="lore-title">Pure Romance &amp; Destiny</h3>
+            <p class="lore-desc">
+              Perjalanan dua jiwa yang saling melengkapi—dari ketidakpercayaan menjadi persahabatan tulus, hingga bersemi menjadi cinta yang manis dan murni di tengah marabahaya.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT THE STORY SECTION -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-kicker">Synopsis &amp; Characters</p>
+          <h2 class="section-title">About The Story</h2>
+          <p class="section-desc">
+            Sebuah kisah petualangan romantis yang memadukan kehangatan emosional dan pesona dunia sihir.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Text Synopsis & Roster -->
+          <div class="about-card">
+            <h3 class="chapter-card-title">Ketika Takdir Menyatukan Dua Dunia</h3>
+            <p class="about-text">
+              Malam itu, <b>Arka</b> tersesat di kedalaman hutan lebat yang tak pernah terjamah manusia biasa. 
+              Sebuah pancaran cahaya biru keperakan menuntun langkahnya menuju <u>Danau Cermin Rembulan</u>, 
+              gerbang rahasia menuju kerajaan mistis <u>Celesta</u>.
+            </p>
+            <p class="about-text">
+              Di sanalah ia berjumpa dengan <b>Elara</b>, gadis penyihir berparas jelita dengan mata sewarna batu safir. 
+              Elara mengemban tugas berat: menemukan <u>Moon Crystal</u> yang hilang sebelum gerhana abadi melenyapkan negerinya. 
+              Meskipun awalnya Arka hanya ingin kembali pulang, ketulusan Elara dan keajaiban mantra <code>Astralis Lumina</code> 
+              menggetarkan lubuk hatinya untuk melangkah bersama mengarungi marabahaya.
+            </p>
+
+            <div class="character-roster">
+              <div class="character-item">
+                <span class="character-name"><b>Arka</b></span>
+                <span class="character-role">Protagonis Pria</span>
+                <p class="character-desc">
+                  Pemuda berjiwa pemberani dan penuh rasa ingin tahu. Walau tidak memiliki sihir, ketulusan hati dan tekadnya melindunginya di saat paling genting.
+                </p>
+              </div>
+
+              <div class="character-item">
+                <span class="character-name"><b>Elara</b></span>
+                <span class="character-role">Penyihir Rembulan</span>
+                <p class="character-desc">
+                  Penyihir muda keturunan garis pelindung Celesta. Dikenal cerdas dan anggun, namun memendam rasa kesepian hingga ia bertemu dengan Arka.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Visual Showcase for Kingdom -->
+          <div class="about-image-wrapper">
+            <img 
+              src="images/kingdom.jpg" 
+              alt="Pemandangan megah Kerajaan Celesta yang tersembunyi di balik hutan ajaib berkabut" 
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHAPTERS SECTION -->
+    <section id="chapters" class="section">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-kicker">Table of Contents</p>
+          <h2 class="section-title">Chapters</h2>
+          <p class="section-desc">
+            Pilih chapter dan nikmati kisah petualangan magis Arka dan Elara.
+          </p>
+        </div>
+
+        <div class="chapters-grid">
+          <!-- Card Chapter 1 -->
+          <a href="chapter1.html" class="chapter-card">
+            <div class="chapter-card-thumb">
+              <span class="chapter-badge-number">Chapter 01</span>
+              <img 
+                src="images/chapter1.jpg" 
+                alt="Arka bertemu Elara di danau ajaib bercahaya di tengah hutan malam" 
+              />
+            </div>
+            <div class="chapter-card-body">
+              <div class="chapter-card-meta">Awal Pertemuan · Siap Dibaca</div>
+              <h3 class="chapter-card-title">Chapter 1: The Girl Beneath the Moon</h3>
+              <p class="chapter-card-excerpt">
+                Tersesat dalam kegelapan malam, <b>Arka</b> mengikuti jejak pendar biru keperakan hingga tiba di tepian danau ajaib. 
+                Di bawah ranting pohon willow bercahaya, ia bertemu dengan <b>Elara</b>—seorang penyihir yang mengubah pandangannya tentang dunia nyata.
+              </p>
+              <div class="chapter-card-footer">
+                <span>Estimasi Baca: 8 Menit</span>
+                <span class="chapter-card-action">Mulai Membaca →</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Card Chapter 2 -->
+          <a href="chapter2.html" class="chapter-card">
+            <div class="chapter-card-thumb">
+              <span class="chapter-badge-number">Chapter 02</span>
+              <img 
+                src="images/chapter2.jpg" 
+                alt="Arka dan Elara memegang Moon Crystal yang memancarkan pendar sihir suci" 
+              />
+            </div>
+            <div class="chapter-card-body">
+              <div class="chapter-card-meta">Klimaks &amp; Resolusi · Siap Dibaca</div>
+              <h3 class="chapter-card-title">Chapter 2: The Magic Between Us</h3>
+              <p class="chapter-card-excerpt">
+                Memasuki Hutan Siluet Abadi, <b>Arka</b> dan <b>Elara</b> menghadapi marabahaya kabut bayangan. 
+                Di altar kuno, mereka membangkitkan <u>Moon Crystal</u> dengan mantra suci <code>Luminis Coniunctio</code>, 
+                menyelamatkan kerajaan dan mengakui perasaan yang bersemi di antara mereka.
+              </p>
+              <div class="chapter-card-footer">
+                <span>Estimasi Baca: 10 Menit</span>
+                <span class="chapter-card-action">Mulai Membaca →</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER SECTION & IDENTITAS PEMBUAT -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Information -->
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo">
+            <span>✧</span>
+            <span>Moonlight &amp; Magic</span>
+          </a>
+          <p class="footer-bio">
+            Sebuah karya Web Novel bergenre Romance Fantasy yang menceritakan petualangan cinta, keberanian, dan keajaiban rembulan antara <b>Arka</b> dan <b>Elara</b>.
+          </p>
+          <p style="font-size: 0.85rem; color: var(--accent-lavender);">
+            Mantra suci pelindung: <code>Luna Aeterna</code>
+          </p>
+        </div>
+
+        <!-- Navigation Links -->
+        <div>
+          <h3 class="footer-col-title">Navigasi Cepat</h3>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Home / Beranda</a></li>
+            <li><a href="#about" class="footer-link">About The Story</a></li>
+            <li><a href="#chapters" class="footer-link">Daftar Chapter</a></li>
+            <li><a href="chapter1.html" class="footer-link">Chapter 1 — The Girl Beneath the Moon</a></li>
+            <li><a href="chapter2.html" class="footer-link">Chapter 2 — The Magic Between Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Student Assignment Details (WAJIB) -->
+        <div>
+          <h3 class="footer-col-title">Tugas Desain Web</h3>
+          <div class="student-badge-card">
+            <span class="student-label">Created by:</span>
+            <span class="student-name">Muhamad Kholil Luthfi</span>
+            <span class="student-major">Program Studi: Manajemen Informatika</span>
+            <span class="student-campus">Politeknik Piksi Input Serang</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Moonlight &amp; Magic. All rights reserved. Web Novel Project.</p>
+        <p>Built with Vanilla HTML5, CSS3, and JavaScript.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="back-to-top-btn" aria-label="Kembali ke atas">
+    ↑
+  </button>
+
+  <!-- Vanilla JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
